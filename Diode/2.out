@@ -1,0 +1,50 @@
+
+**** 03/01/23 08:43:55 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * C:\Users\Lenovo\3D Objects\DIODE_FINAL_PROJECT\Diode\2.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.2
+* Wed Mar 01 08:43:44 2023
+
+
+
+** Analysis setup **
+.OP 
+.LIB "C:\Users\USER\Desktop\Schematic1.lib"
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+-------------------------------------------$
+ERROR -- Can't find library
+.lib "nom.lib"
+
+.INC "2.net"
+
+
+
+**** INCLUDING 2.net ****
+* Schematics Netlist *
+
+
+
+R_R2         0 2  20k  
+V_V1         1 0 6
+D_D1         1 2 D1N4002 
+D_D2         2 3 D1N4002 
+R_R3         0 3  10k  
+
+**** RESUMING 2.cir ****
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END
+

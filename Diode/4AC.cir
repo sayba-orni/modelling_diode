@@ -1,0 +1,22 @@
+* C:\Users\Lenovo\3D Objects\DIODE_FINAL_PROJECT\Diode\4AC.sch
+
+* Schematics Version 9.2
+* Wed Mar 01 09:48:52 2023
+
+
+
+** Analysis setup **
+.tran 1u 1 0 1u
+.OP 
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "nom.lib"
+
+.INC "4AC.net"
+
+
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END
